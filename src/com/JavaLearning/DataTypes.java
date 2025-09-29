@@ -94,5 +94,36 @@ public class DataTypes {
         boolean isEligible = false;
         System.out.println(isEligible);
 
+        // Widening Conversion and loss
+        byte byteValue = 10; // 1 byte
+        short shortValue = byteValue; // short has 2 bytes
+        int intValue = 10; //int has 4 bytes
+        long longValue = intValue; // Widening Conversion from int to long // long has 8 bytes
+        float floatValue = longValue; // Widening Conversion from long to float // float has 4 bytes but supports scientific notation for large numbers, that's why we are able to store a long value in a float variable
+        double doubleValue = floatValue; // Widening Conversion from float to double // double has 8 bytes
+
+        System.out.println("int: " + intValue);
+        System.out.println("long: " + longValue);
+        System.out.println("float: " + floatValue);
+        System.out.println("double: " + doubleValue);
+
+        // Widening Conversion -> implicit conversion -> automatic conversion
+
+
+        // Narrowing conversion -> Explicit conversion
+        double doubleValue1 = 123.456;
+        float floatValue1 = (float) doubleValue1; // Narrowing conversion from double to float
+        long longValue1 = (long) floatValue1; // Narrowing conversion from float to long, because float supports scientific notations, it can store larger numbers than long despite having less bytes
+        int intValue1  = (int) longValue1; // Narrowing conversion from long to int
+
+        System.out.println("double: " + doubleValue1);
+        System.out.println("float: " + floatValue1);
+        System.out.println("long: " + longValue1);
+        System.out.println("int: " + intValue1);
+
+        long a = Long.MAX_VALUE; // 01111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111
+        System.out.println(a);
+        int b = (int) a; // 11111111 11111111 11111111 11111111 (2's complement representation of -1)
+        System.out.println(b); //-1
     }
 }
