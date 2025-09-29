@@ -70,5 +70,29 @@ public class DataTypes {
         System.out.println("Double Minimum Value: " + doubleMin);
         System.out.println("Double Maximum Value: " + doubleMax);
 
+        // Characters
+
+        char initial = 'a';
+        System.out.println(initial);
+        // Every character is mapped to a numerical value
+        System.out.println((int) initial); // o/p is 97 // This is typeCasting
+        System.out.println("Character Ranges: ");
+        System.out.println((int) Character.MIN_VALUE); // 0
+        System.out.println((int) Character.MAX_VALUE); // 65535
+
+
+        char heartSymbol = 10084;
+        char rightSymbol = '\u27A4'; // Unicode representation
+        System.out.println(heartSymbol);
+        System.out.println(rightSymbol);
+
+        for(int i=0; i<128; i++)
+        {
+            System.out.println((char) i);
+        }
+
+        boolean isEligible = false;
+        System.out.println(isEligible);
+
     }
 }
