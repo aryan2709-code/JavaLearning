@@ -21,3 +21,6 @@ public class Car {
             speed = 0;
     }
 }
+
+// Encapsulation is the bundling of data and methods in a single unit called class, to prevent unrestricted access to the data.
+// Inheritance is the property of OOP through which a child class can inherit properties from a parent class.
