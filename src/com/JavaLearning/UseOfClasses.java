@@ -1,6 +1,13 @@
 package com.JavaLearning;
 
 public class UseOfClasses {
+
+    // Method that changes the properties of Cat class
+    public static Cat makeCatNameUpperCase(Cat cat) {
+        cat.name = cat.name.toUpperCase();
+        return cat;
+    }
+
     public static void main(String[] args) {
         // Creating an object of the Car class
         Car car = new Car();
@@ -11,18 +18,27 @@ public class UseOfClasses {
         car.model = "Safari";
 
         car.accelerate(1);
-        System.out.println(car.speed); // o.p : 41
+        System.out.println(car.speed); // Output: 41
 
-        Cat cat = new Cat(); // Creating an object of the cat class
-        cat.name = "Bob"; //these properties of cat was inherited from the parent class Animal
+        // Creating an object of the Cat class
+        Cat cat = new Cat();
+        cat.name = "Bob";   // These properties were inherited from the parent class Animal
         cat.age = 5;
         cat.breed = "Jaat";
 
-        // Polymorphism
-        Animal cat1 = new Cat(); // Object is of Cat class but reference is of Animal class
-        cat1.makeSound(); // Meow
-        // We can assign an object of a subclass to a reference of superclass
+        // Polymorphism: Object is of Cat class, reference is of Animal class
+        Animal cat1 = new Cat();
+        cat1.makeSound(); // Output: Meow
+        // We can assign an object of a subclass to a reference of the superclass
 
-        // Abstraction is hiding the underlying inner complexity/ hiding implementation details
+        // Abstraction: Hiding the underlying implementation details
+
+        // Passing object reference to a method
+        Cat a = new Cat();
+        a.name = "bob";
+        Cat cat2 = makeCatNameUpperCase(a);
+
+        System.out.println(a.name);    // Output: BOB
+        System.out.println(cat2.name); // Output: BOB
     }
 }
