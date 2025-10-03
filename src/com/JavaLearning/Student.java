@@ -13,6 +13,21 @@ public class Student {
     private int rollNumber;
     private int age;
 
+    // Default Constructor
+    public Student() // Constructors have no return type
+    {
+        this.age = 10;
+    }
+
+    // Parameterised constructor
+    public Student(String name, int rollNumber, int age)
+    {
+        this.age = age;
+        this.name = name;
+        this.rollNumber = rollNumber;
+    }
+
+
     public void setAge(int age)
     {
         if(age < 0)
