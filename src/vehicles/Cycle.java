@@ -10,9 +10,10 @@ package vehicles;
 
 public class Cycle {
 
+    class miniCycle { // Inner class
+
+    }
 
 }
 
-class miniCycle {
 
-}
