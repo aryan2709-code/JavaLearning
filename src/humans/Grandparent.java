@@ -1,12 +1,14 @@
 package humans;
 
 public class Grandparent {
-    private string name;
+    private String name;
     private int age;
 
     // Constructor
-    public Grandparent()
+    public Grandparent(int age, String name)
     {
+        this.age = age;
+        this.name = name;
         System.out.println("Grandparent constructor called");
     }
 
@@ -18,11 +20,11 @@ public class Grandparent {
         this.age = age;
     }
 
-    public string getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(string name) {
+    public void setName(String name) {
         this.name = name;
     }
 
