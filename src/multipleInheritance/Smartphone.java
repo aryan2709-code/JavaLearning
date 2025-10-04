@@ -8,6 +8,7 @@ package multipleInheritance;
 //
 // But Java does NOT support multiple inheritance with classes.
 // This restriction is to avoid ambiguity (e.g., the Diamond Problem).
-public class Smartphone extends Camera, MusicPlayer, Phone {
+
+public class Smartphone extends Camera {
 
 }
