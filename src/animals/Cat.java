@@ -5,6 +5,6 @@ public class Cat extends Animal {
     @Override
     public void sayHello()
     {
-        System.out.println("Meow");
+        System.out.println("Meow meow");
     }
 }
