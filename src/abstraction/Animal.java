@@ -4,15 +4,17 @@ package abstraction;
 //
 // 1. No modifier → default (package-private)
 //    - Visible only within the same package.
+//    - not visible to the subclasses in the different package
 //
 // 2. private → Visible only within the same class.
 //
 // 3. protected → Visible within the same package AND to subclasses
 //    (even if the subclass is in a different package).
+     // protected gives package level access and subclasses access
 //
 // 4. public → Visible from anywhere.
 //
-// ⚡ Notes:
+//  Notes:
 // - Top-level classes can only be public or package-private (not private/protected).
 // - Fields, methods, and inner classes can use all four modifiers.
 // - Access modifiers enforce encapsulation and controlled visibility.
