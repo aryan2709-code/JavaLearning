@@ -37,14 +37,25 @@ public class Test {
 
         // Constructor was called only once
 
-        Dog dog = new Dog("Bob");
-        dog.makeSound();
-        //dog.changeSound("woof");
-         // The above line is problematic and will lead to an error
-        // Protected members cannot be accessed through object references created in classes outside the package
-        // (i.e., external references), unless the accessing class is a subclass and is using inheritance.
-        dog.setDogSound("Woof");
-        dog.makeSound();
+//        Dog dog = new Dog("Bob");
+//        dog.makeSound();
+//        //dog.changeSound("woof");
+//         // The above line is problematic and will lead to an error
+//        // Protected members cannot be accessed through object references created in classes outside the package
+//        // (i.e., external references), unless the accessing class is a subclass and is using inheritance.
+//        dog.setDogSound("Woof");
+//        dog.makeSound();
+
+
+        Student student1 = new Student();
+        Student student2 = new Student();
+        Student student3 = new Student();
+        Student student4 = new Student();
+        Student student5 = new Student();
+        Student student6 = new Student();
+        Student.getCount() ; // O/p : 6 , count was a static property of the student class
+
+
 
 
     }
