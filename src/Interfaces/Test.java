@@ -5,7 +5,7 @@ public class Test {
         Dog dog = new Dog();
         dog.eat();
         dog.sleep();
-        System.out.println(Dog.max_age);
+        System.out.println(Dog.MAX_AGE);
         dog.run(); //run is a default method defined inside the interface
 
 
@@ -15,7 +15,8 @@ public class Test {
         Cat cat = new Cat();
         cat.eat();
         cat.sleep();
-        System.out.println(Cat.max_age);
+        System.out.println(Animal.MAX_AGE);
+        System.out.println(Cat.MAX_AGE);
         cat.run();
 
     }
