@@ -35,6 +35,16 @@ public class InnerClass {
         // . It cannot define static members except constants.
         // . It is used when you need an one time short implementation.
 
+        // Information about local inner classes
+        // A local inner class is a class defined inside a method,constructor, or block.
+        // Its scope is limited to that method or block
+        // It cannot be accessed outside the method where it is defined.
+        // It can access all members of the outer class and local variables only if they are
+        // final or effectively final
+        // It cannot declare static members except constants
+        // It can have constructors
+        // It is defined or used when a helper class is needed only within a single method.
+
 
     }
 }

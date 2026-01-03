@@ -5,6 +5,7 @@ public class Hotel {
     private int totalRooms;
     private int reservedRooms;
 
+
     public Hotel(String name, int totalRooms, int reservedRooms)
     {
         this.name = name;
@@ -41,7 +42,7 @@ public class Hotel {
         if(validator.validate())
         {
             reservedRooms += numOfRooms;
-            System.out.println("Reservation confirmed for " + guestName+ " for " + numOfRooms);
+            System.out.println("Reservation confirmed for " + guestName+ " for " + numOfRooms + " rooms");
         }
         else
         {
